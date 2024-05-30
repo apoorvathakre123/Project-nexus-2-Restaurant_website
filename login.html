@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        :root {
+            --primary-color: #42200b;
+            --secondary-color: #ffc135;
+            --tertiary-color: #df1c1c;
+            --text-dark: #212529;
+            --white: #ffffff;
+            --max-width: 1200px;
+            --header-font-1: "Alfa Slab One", serif;
+            --header-font-2: "Bebas Neue", sans-serif;
+          }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        h2{
+            font-size: 3rem;
+            margin-top: auto;
+            font-weight: 1000;
+            font-family: var(--header-font-1);
+            color: var(--primary-color);
+            text-align: center;
+            line-height: 3.75rem;
+            text-shadow: 2px 2px var(--secondary-color);
+          }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .btn {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            outline: none;
+            text-align: center;
+            text-decoration: underline;
+            border: none;
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--white);
+            background-color: var(--tertiary-color);
+            transition: 0.3s;
+            cursor: pointer;
+          }
+          .btn:hover {
+            background-color: var(--primary-color);
+          }
+       
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="login.php" method="POST">
+            <div class="form-group">
+                <label for="Username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button class="btn" type="submit">Login</button>
+        </form>
+      
+    </div>
+</body>
+</html>
